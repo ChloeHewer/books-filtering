@@ -1,0 +1,57 @@
+$card-width: 265px;
+$card-height: $card-width * 3.5 / 2.5;
+$picture-width: 100px;
+$picture-height: $picture-width * 3.5 / 2.5;
+
+.scene {
+  width: $card-width;
+  min-width: $card-width;
+  height: $card-height;
+  perspective: 600px;
+  margin: 10px;
+}
+.book {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  border: 2px solid black;
+  background-color: #aadcf3;
+  overflow: hidden;
+  // background-repeat: no-repeat, repeat;
+  // background-size: cover;
+}
+
+.picture {
+  width: $picture-width;
+  height: $picture-height;
+  border: 1px solid black;
+}
+
+.title {
+  width: 50%;
+}
+
+.author {
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.description {
+  width: 100%;
+  font-size: small;
+}
+
+.topSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  // position: absolute;
+  // z-index: -1;
+  // width: 100%;
+  // height: 100%;
+}
