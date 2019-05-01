@@ -27,7 +27,7 @@ class BooksContainer extends React.Component<IOwnProps & IStateProps, IState> {
   public render() {
     return (
       <div>
-        <section>
+        <section className={styles.forms}>
           <form>
             <fieldset>
               <label className={styles.author}>Select Author</label>

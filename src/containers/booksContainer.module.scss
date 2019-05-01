@@ -8,6 +8,14 @@
   justify-content: space-evenly;
 }
 
+.forms {
+  display: flex;
+}
+
 .author {
-  margin: 15px;
+  @extend %selects;
+}
+
+.genre {
+  @extend %selects;
 }
